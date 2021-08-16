@@ -8,6 +8,8 @@ import { Link, useHistory } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
 import { searchTerm } from "../../action/index";
 const Home = () => {
+  console.log(process.env.GOOGLE_API_KEY);
+  console.log(process.env.REACT_APP_GOOGLE_API_KEY);
   const [input, setInput] = useState("");
   const dispatch = useDispatch();
   const history = useHistory();

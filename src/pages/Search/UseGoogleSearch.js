@@ -10,7 +10,7 @@ const UseGoogleSearch = () => {
     dispatch(setLoading(true));
     const fetchData = async () => {
       fetch(
-        `https://www.googleapis.com/customsearch/v1?key=${GOOGLE_API_KEY}&cx=${CONTEXT_KEY}&q=${term}`
+        `https://www.googleapis.com/customsearch/v1?key=${process.env.GOOGLE_API_KEY}&cx=${process.env.CONTEXT_KEY}&q=${term}`
       )
         .then((response) => response.json())
         .then((result) => {
