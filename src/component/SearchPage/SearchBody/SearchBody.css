@@ -1,0 +1,54 @@
+.search_body {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  margin-top: 20px;
+}
+.search_body .result_count {
+  font-family: "Ubuntu", sans-serif;
+}
+.results {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 10px;
+  width: 100%;
+  flex-direction: column;
+}
+.results .result {
+  padding: 10px;
+}
+.result .link_domain {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: rgb(62, 114, 226);
+  font-family: "ubuntu", sans-serif;
+  font-weight: bold;
+  cursor: pointer;
+}
+.result .link_domain .link_domain_image {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  object-fit: contain;
+}
+.result .link_display {
+  color: rgb(0, 81, 255);
+  font-weight: bold;
+  font-size: 1.4rem;
+  cursor: pointer;
+  margin-top: 3px;
+}
+.result .description {
+  font-size: 1rem;
+  margin-top: 5px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+@media only screen and (max-width: 850px) {
+  .search_body {
+    width: 100%;
+    padding: 0px 10px;
+  }
+}
